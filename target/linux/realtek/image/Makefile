@@ -127,4 +127,12 @@ define Device/zyxel_gs1900-8hp-v2
 endef
 TARGET_DEVICES += zyxel_gs1900-8hp-v2
 
+define Device/zyxel_gs1900-16
+  $(Device/zyxel_gs1900)
+  DEVICE_MODEL := GS1900-16
+  ZYXEL_VERS := AAHJ
+endef
+TARGET_DEVICES += zyxel_gs1900-16
+
+
 $(eval $(call BuildImage))
